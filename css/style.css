@@ -20,11 +20,24 @@ body {
 }
 
 /* line 22, ../sass/style.scss */
-p {
-  margin-bottom: 2px;
+.instructions {
+  background: rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  padding: 10px;
+  max-width: 600px;
 }
 
-/* line 26, ../sass/style.scss */
+/* line 29, ../sass/style.scss */
+p {
+  margin-bottom: 2px;
+  font-size: 0.75em;
+}
+/* line 32, ../sass/style.scss */
+p:last-child {
+  margin-bottom: 10px;
+}
+
+/* line 37, ../sass/style.scss */
 canvas {
   width: 100%;
   height: 100%;
@@ -35,22 +48,30 @@ canvas {
   -o-transition: background linear 100ms;
   transition: background linear 100ms;
 }
-/* line 33, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 canvas.playing {
   background: rgba(0, 255, 0, 0.1);
 }
-/* line 38, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 canvas.recording {
   background: rgba(255, 0, 0, 0.4);
 }
 
-/* line 43, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 100;
+  margin-bottom: 10px;
 }
 
-/* line 48, ../sass/style.scss */
+/* line 60, ../sass/style.scss */
+.tempoBox {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* line 66, ../sass/style.scss */
 input[type="text"].tempo {
   font-size: 3em;
   background: #151515;
@@ -71,7 +92,7 @@ input[type="text"].tempo {
   -o-transition: 100ms all linear;
   transition: 100ms all linear;
 }
-/* line 61, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 input[type="text"].tempo:focus {
   background: rgba(71, 157, 177, 0.25);
   -webkit-box-shadow: 0 0 0 black;
@@ -80,7 +101,7 @@ input[type="text"].tempo:focus {
   border-color: white;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 .loopPanel {
   width: 100%;
   height: 125px;
@@ -89,7 +110,7 @@ input[type="text"].tempo:focus {
   position: relative;
   font-family: 'PT Sans Narrow', sans-serif;
 }
-/* line 76, ../sass/style.scss */
+/* line 94, ../sass/style.scss */
 .loopPanel:after {
   position: absolute;
   left: 0;
@@ -109,13 +130,13 @@ input[type="text"].tempo:focus {
   transition: 100ms linear all;
   pointer-events: none;
 }
-/* line 96, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 .loopPanel:hover:after {
   opacity: 0.75;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 104, ../sass/style.scss */
+  /* line 122, ../sass/style.scss */
   .loopPanel {
     height: 75px;
   }
