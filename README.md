@@ -3,6 +3,8 @@ HTML5  Loop-station
 
 HTML5 Loop-station
 
+LINK: http://loopstation.stevn.co.uk
+
 This is a 4 track real-time loopstation made in Javascript and HTML5, utilising the webkit javascript audio methods and HTML5 audio attributes
 
 It might be a little laggy on your system if you don't have equipment capable of delivering lag free input.
@@ -23,4 +25,4 @@ You can now click another track to arm for recording - it will begin recording o
 
 Have fun!
 
-demo: http://loopstation.stevn.co.uk
+
