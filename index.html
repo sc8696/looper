@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loopyboopy</title>
+    <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> -->
+	<link rel="stylesheet" href="css/normalize.css"/>
+	<link rel="stylesheet" href="css/foundation.css"/>
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+	<div class="row">
+		<div class="small-12 columns">
+			<h1 id="loor">The webkit loopstation</h1>
+                        <p>Click a track to arm for recording. After 8 beats of count in, the track will start recording for 8 beats.</p>
+                        <p>After this, any time you arm a track, it will start recording on beat 1 of the next set of 8</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="large-2 small-4 columns small-centered">
+			<input id="tempo" class="tempo" type="text" value="120"/><span>bpm</span>
+		</div>
+	</div>
+	
+	
+	<div class="row">
+		<div class="small-12 columns">	
+			<div class="loopPanel">
+				<canvas id="loopPanel1"></canvas>
+			</div>
+			<div class="loopPanel">
+				<canvas id="loopPanel2"></canvas>
+			</div>
+			<div class="loopPanel">
+				<canvas id="loopPanel3"></canvas>
+			</div>
+			<div class="loopPanel">
+				<canvas id="loopPanel4"></canvas>
+			</div>
+		</div>
+	</div>
+
+
+	<audio id="click" src="sounds/clave.mp3"></audio>
+	<audio id="clickAccent" src="sounds/claveAccent.mp3"></audio>
+
+	<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
